@@ -1,0 +1,146 @@
+body {
+    
+    background-color: #F3F4F9;
+   
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    
+    }
+h1{
+    margin-left: 200px;
+}
+
+    #form-container {
+
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #form-inner-container {
+
+        background-color: white;
+        width: 100%;
+        
+        border-radius: 8px;
+        box-shadow: 0 0 20px gainsboro;
+    
+    }
+    #sign-up-container, #sign-in-container {
+   
+        padding: 60px 80px;
+        width: 320px;
+    
+    }
+    form input:not(:last-of-type) {
+
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid #E5E9F5;
+        background-color: #F6F7FA;
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 10px;
+    
+    }
+    #form-controls {
+
+        margin-bottom: 25px;
+    
+    }
+    h3 {
+
+        color: rgb(0, 30, 255);
+        font-size: 150%;
+        font-weight: 500;
+    
+    }
+    
+    label {
+    
+        color: #7369AB;
+    
+    }
+    
+    ::placeholder {
+    
+        color: #C0C7DB;
+        font-size: larger;
+        letter-spacing: 1.2px;
+    }
+    #form-controls button {
+
+        border: none;   
+        font-size: 110%;
+    
+    }
+    
+    #form-controls button:hover {
+    
+        cursor: pointer;
+    
+    }
+    button[type="submit"] {
+
+        padding: 16px 75px;
+        background-color: #001c6b;
+        border-radius: 10px;
+        color: white;
+    
+    }
+    
+    button[type="submit"]:hover {
+    
+        background-color: #874300;
+    
+    }
+    
+    button[type="button"] {
+    
+        padding: 16px 0 16px 35px;
+        background-color: transparent;
+        color: #004cff;
+    
+    }
+    #terms {
+
+        width: 30px;
+        height: 30px;
+        appearance: none;
+        border: 2px solid #7369AB;
+        border-radius: 4px;
+    
+    }
+    #terms:checked:after {
+
+        content: '\2713';
+        color: #7369AB;
+        font-size: 24px;
+        position: relative;
+        top: 0;
+        left: 3px;
+    
+    }            
+    label[for="terms"] {
+
+        display: inline-block;
+        width: 80%;
+        margin-left: 10px;
+    
+    }
+    
+    .termsLink {
+    
+        color: #2f00ff;
+        text-decoration: none;
+    
+    }
+    
+    .hide {
+
+        display: none;
+    
+    
+    }
+    

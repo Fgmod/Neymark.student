@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./opp.css">
+    <title>Neymark.s</title>
+    <style>
+    .animate-charcter{
+        margin-left:250px;
+    }
+    </style>
+</head>
+<body>
+<!-- Анимация фона-->
+<div class="animation">
+     <div class="wave"></div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+</div>
+
+
+
+
+
+<!-- HTML модального окна -->
+<div id="openModal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Регистрация</h3>
+        <a href="#close" title="Close" class="close">×</a>
+      </div>
+      <div class="modal-body">    
+        <ul>
+			 <div id="sign-up-container">
+        <h3>Начало работы</h3>
+    
+        <form id="registrationForm">
+    
+            <label for="name">Введите ваше имя:</label>
+            <input type="text" id="name" name="name" required placeholder="Введите ваше имя"><br>
+
+            <label for="name">Введите вашу почту:</label>
+            <input type="text" id="name" name="name" required placeholder="Введите ваше имя"><br>
+
+
+            <label for="age">Введите ваш возраст:</label>
+            <input type="number" id="age" name="age" required placeholder="Введите ваш возраст"><br>
+    
+        
+
+        <input type="checkbox" name="terms" id="terms">
+        <label for="terms">I agree to the <a href="#" class="termsLink">Terms of service</a> and <a href="#" class="termsLink">Privacy Policy</a>.</label>
+        </form>
+    
+    </div>
+    
+        <div id="form-controls">
+            <button type="button" id=" toggleSignIn" onclick="window.location.href='./opp.html'">Продолжить</button>
+            <button type="button" onclick="window.location.href='./app.html'" id="toggleSignUp">Узнать больше</button>
+        </div>
+		</ul>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ 
+
+ 
+
+
+  <div class="area" >
+   <div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3 class="animate-charcter">Neymark.s</h3>
+    </div>
+  </div>
+</div>
+ <div class = "text">
+<h1>Меню</h1>
+    <ul class = "menu">
+    <li class="menu-item"><a href="./tetx1.html">Список мероприятий</a></li>
+    <li class="menu-item"><a href="./text2.html">Рекомендации</a></li>
+    <li class="menu-item"><a href="./text3.html">Информация о пользователе</a></li>
+    <li class="menu-item"><a href="./text8.html">Достижения</a></li>
+    <li class="menu-item"><a href="./text9.html">Посещенные мероприятия</a></li>
+    <li class="menu-item"><a href="#openModal">Регистрация</a></li>
+    </ul>
+</div>
+
+   
+
+            <ul class="circles" >
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div>
+
+
+</body>
+</html>
