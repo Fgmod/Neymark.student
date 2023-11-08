@@ -1,0 +1,91 @@
+body{
+    background-color: black;
+    color:white;
+}
+h1{
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size: 50px;
+}
+p{
+    margin-left:50px;
+}
+
+h2{
+    color:rgb(76, 64, 255);
+}
+h2 span{
+    color:rgb(135, 31, 0);
+}
+h2 .a{
+    color:rgb(183, 50, 255);
+}
+
+.container {
+    display: flex; /* установка flex-контейнера */
+    align-items: center; /* выравнивание по вертикали */
+  }
+  
+  p h1 {
+    flex: 1; /* растягиваемый элемент внутри контейнера */
+  }
+  
+  img {
+    margin-left: 10px; /* отступ слева для изображения, чтобы создать промежуток с текстом */
+    width:60%;
+  }
+
+
+
+/*Меню*/
+.menu {
+    display: flex;
+    margin-left: 400px;
+    background-color: #000000;
+    padding: 10px;
+  }
+  
+  .menu-btn {
+    font-size: 13px;
+    background-color: #333;
+    color: rgb(195, 45, 0);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .menu-btn:hover {
+    background-color: #555;
+  }
+
+
+/*О программе*/
+a{
+    color:black;
+}
+.op {
+    margin-left: 100px;
+    color: black;
+    width: 100px;
+    background: linear-gradient(to right, #0800ff, #902400);
+    padding: 10px 20px;
+    
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px;
+
+    
+}
+.op:hover {
+    background: linear-gradient(to right, #6000f0, #c0392b);
+}
+
+

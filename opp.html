@@ -10,6 +10,10 @@
     .animate-charcter{
         margin-left:250px;
     }
+    .containers{
+      margin-top:500px;
+    }
+    
     </style>
 </head>
 <body>
@@ -52,7 +56,7 @@
         
 
         <input type="checkbox" name="terms" id="terms">
-        <label for="terms">I agree to the <a href="#" class="termsLink">Terms of service</a> and <a href="#" class="termsLink">Privacy Policy</a>.</label>
+        <label for="terms">I agree to the <a href="#" class="termsLink">Terms of service</a> and <a href="#" class="termsLink">Privacy Policy.</a></label>
         </form>
     
     </div>
@@ -82,18 +86,27 @@
 </div>
  <div class = "text">
 <h1>Меню</h1>
-    <ul class = "menu">
-    <li class="menu-item"><a href="./tetx1.html">Список мероприятий</a></li>
-    <li class="menu-item"><a href="./text2.html">Рекомендации</a></li>
-    <li class="menu-item"><a href="./text3.html">Информация о пользователе</a></li>
-    <li class="menu-item"><a href="./text8.html">Достижения</a></li>
-    <li class="menu-item"><a href="./text9.html">Посещенные мероприятия</a></li>
-    <li class="menu-item"><a href="#openModal">Регистрация</a></li>
+    <nav class="three">
+  
+  <ul class="topmenu">
+    <li><a href="#">Информация о пользователе</a></li>
+    <li><a href="#">Достижения</a></li>
+    <li><a href="#">Список дополнительных курсов<i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="./text1.html">Курс "Управление проектами в IT-сфере"</a></li>
+        <li><a href="./text2.html">Курс "Разработка веб-приложений"</a></li>
+        <li><a href="./text3.html">Курс "Интернет вещей (IoT) и Умный дом"</a></li>
+        <li><a href="./text4.html">Курс "Анализ данных и машинное обучение"</a></li>
+        <li><a href="./text5.html"> Курс "Разработка мобильных приложений для iOS и Android"</a></li>
+        <li><a href="./text6.html">Курс "Безопасность информационных систем"</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Посещенные мероприятия</a></li>
+    <li><a href="#openModal">Регистрация</a></li>
+  </ul>
+</nav>
     </ul>
 </div>
-
-   
-
             <ul class="circles" >
                     <li></li>
                     <li></li>
@@ -107,7 +120,5 @@
                     <li></li>
             </ul>
     </div>
-
-
 </body>
 </html>
