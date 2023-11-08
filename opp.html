@@ -14,7 +14,12 @@
     .containers{
       margin-top:500px;
     }
-    
+    .FiraSans{
+      font-family: Fira Sans;
+    }
+    .Calibri{
+      font-family: Calibri;
+    }
     </style>
 </head>
 <body>
@@ -71,8 +76,35 @@
     </div>
   </div>
 </div>
- 
- 
+
+<!-- HTML модального окна -->
+<div id="openModall" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Регистрация</h3>
+        <a href="#close" title="Close" class="close">×</a>
+      </div>
+      <div class="modal-body">    
+        <ul>
+			 <div id="sign-up-container">
+        <h3>Нет посещенных мероприятий</h3>
+    
+        <form id="registrationForm">
+    
+            
+    </div>
+    
+        <div id="form-controls">
+            
+        </div>
+		</ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
  
 
@@ -81,18 +113,20 @@
    <div class="container">
   <div class="row">
     <div class="col-md-12 text-center">
-      <h3 class="animate-charcter">Neymark.s</h3>
+    <div class="FiraSans"> <h3 class="animate-charcter">Neymark.s</h3> </div>
+    <img src="C:\Users\User\Desktop\неймарк\loQp1Mg6lYE.jpg" alt="Изображение">
     </div>
   </div>
 </div>
  <div class = "text">
-<h1>Меню</h1>
+<div class="FiraSans"> <h1>Меню</h1> </div>
     <nav class="three">
-  
+<div class="Calibri">
   <ul class="topmenu">
-    <li><a href="#">Информация о пользователе</a></li>
-    <li><a href="#">Достижения</a></li>
-    <li><a href="#">Список дополнительных курсов<i class="fa fa-angle-down"></i></a>
+    <li><a class="fafa-angle-downn" href="./testRR.html">Настройка характеристик</a></li>
+    <li><a class="fafa-angle-down" href="#">Список дополнительных курсов<i class="fafa-angle-down"></i></a>
+    
+    <div class="Calibri">
       <ul class="submenu">
         <li><a href="./text1.html">Курс "Управление проектами в IT-сфере"</a></li>
         <li><a href="./text2.html">Курс "Разработка веб-приложений"</a></li>
@@ -101,12 +135,15 @@
         <li><a href="./text5.html"> Курс "Разработка мобильных приложений для iOS и Android"</a></li>
         <li><a href="./text6.html">Курс "Безопасность информационных систем"</a></li>
       </ul>
+    </div>
     </li>
-    <li><a href="#">Посещенные мероприятия</a></li>
-    <li><a href="#openModal">Регистрация</a></li>
+    <li><a href="#openModall">Посещенные мероприятия</a></li>
+    <li><a class="reg" href="#openModal">Регистрация</a></li>
+    
   </ul>
 </nav>
     </ul>
+</div>
 </div>
             <ul class="circles" >
                     <li></li>
@@ -121,5 +158,49 @@
                     <li></li>
             </ul>
     </div>
+
+
+<div class="cards">
+<div class="FiraSans"> <h2>Карточки работодателей</h2> </div>
+ <div class="employer-card">
+
+ <div class="Calibri"> <button class="menu-btnn" onclick="toggleCard(1)">Show/Hide</button> </div>
+    <div class="employer-info" id="card1" style="display: none;">
+      <div class="FiraSans"> <h2>Профессия: Frontend-разработчик</h2> </div>
+      <div class="Calibri">
+      <p>Уровень зарплаты: от 100 000 рублей</p>
+      <p>Направление в IT: Web-разработка</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="employer-card">
+ <div class="Calibri">   <button class="menu-btnn" onclick="toggleCard(2)">Show/Hide</button> </div>
+    <div class="employer-info" id="card2" style="display: none;">
+      <div class="FiraSans"> <h2>Профессия: Junior Frontend Developer</h2> </div>
+      <div class="Calibri">
+      <p>Зарплата: 70 000 рублей</p>
+      <p>Направление в IT: Разработка пользовательского интерфейса</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="employer-card">
+ <div class="Calibri">   <button class="menu-btnn" onclick="toggleCard(3)">Show/Hide</button> </div>
+    <div class="employer-info" id="card3" style="display: none;">
+      <div class="FiraSans"> <h2>Профессия: Data Scientist</h2> </div>
+      <div class="Calibri">
+      <p>Зарплата: 150 000 рублей</p>
+      <p>Направление в IT: Анализ данных и машинное обучение</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+<script src="./opp.js"></script>
 </body>
 </html>

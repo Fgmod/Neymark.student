@@ -38,7 +38,7 @@ h2 .a{
 
 
 /*Меню*/
-.menu {
+.menu  {
     display: flex;
     margin-left: 400px;
     background-color: #000000;
@@ -89,3 +89,6 @@ a{
 }
 
 
+.osnova{
+  margin-left:350px;
+}

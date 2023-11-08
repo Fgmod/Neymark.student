@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Подбор курсов, лекций и мероприятий</title>
+    <link rel="stylesheet" href="./text.css">
+       <style>
+html {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin-left: 500px;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 36px;
+  color: #333;
+  cursor: pointer;
+}
+
+.header h2 span {
+  font-weight: 700;
+}
+
+.header h2 .a {
+  font-size: 24px;
+  color: #777;
+}
+
+form {
+  margin-top: 40px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+  margin-right: 10px;
+}
+
+form select {
+  margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#results {
+  margin-top: 40px;
+}
+
+#results h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#results p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 10px;
+}
+    </style>
+    <div class="row">
+    <div class="col-md-12 text-center">
+      <h2 class="animate-charcter" onclick="window.location.href = 'opp.html';">Ney<span>mark</span><span class="a">.s</span></h2>
+    </div>
+  </div>
+</head>
+
+<body>
+
+    <h1>Выберите свои характеристики</h1>
+
+    <form id="courseSelector" onsubmit="return submitForm()">
+        <label for="interest">Выберите свои интересы:</label><br>
+        <input type="checkbox" id="programming" name="interest" value="programming">
+        <label for="programming">Программирование</label><br>
+        <input type="checkbox" id="design" name="interest" value="design">
+        <label for="design">Дизайн</label><br>
+        <input type="checkbox" id="business" name="interest" value="business">
+        <label for="business">Бизнес</label><br><br>
+
+        <label for="level">Выберите ваш уровень:</label><br>
+        <select id="level" name="level">
+            <option value="beginner">Начинающий</option>
+            <option value="intermediate">Средний</option>
+            <option value="advanced">Продвинутый</option>
+        </select><br><br>
+
+        <label for="location">Выберите местоположение:</label><br>
+        <input type="radio" id="online" name="location" value="online">
+        <label for="online">Онлайн</label><br>
+        <input type="radio" id="offline" name="location" value="offline">
+        <label for="offline">Оффлайн</label><br><br>
+
+        <input type="submit" value="Подобрать курсы">
+    </form>
+
+    <div id="results">
+        <!-- Сюда будет выводиться результат подбора курсов -->
+    </div>
+
+    <script>
+        function submitForm() {
+            var interests = [];
+            var checkboxes = document.querySelectorAll('input[name="interest"]:checked');
+            checkboxes.forEach(function(checkbox) {
+                interests.push(checkbox.value);
+            });
+
+            var level = document.getElementById('level').value;
+            var location = document.querySelector('input[name="location"]:checked').value;
+
+            // Фейковый запрос на сервер (заменить на реальный AJAX запрос)
+            var fakeResults = [{
+                    name: "Курс по " + interests.join(', ') + " для " + level + " уровня",
+                    location: location
+                },
+                {
+                    name: "Лекция по " + interests.join(', ') + " для " + level + " уровня",
+                    location: location
+                }
+            ];
+
+            // Отображение результатов на странице
+            var resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '<h2>Результаты подбора:</h2>';
+            fakeResults.forEach(function(result) {
+                var resultElement = document.createElement('p');
+                resultElement.textContent = result.name + " (" + result.location + ")";
+                resultsDiv.appendChild(resultElement);
+            });
+
+            return false; // Отменяем стандартное поведение формы
+        }
+    </script>
+</body>
+
+</html>

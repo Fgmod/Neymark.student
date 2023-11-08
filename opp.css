@@ -2,7 +2,10 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
 }
-
+img{
+  height: 100px;
+  margin-left: 240px;
+}
 
 .p{
 text-align:right;
@@ -505,6 +508,101 @@ a {
   visibility: visible;
   opacity: 1;
 }
-.topmenu{
 
+
+/*Карточки*/
+.cards{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.employer-card {
+  background-color: #ff770f;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+}
+
+.employer-info {
+  text-align: center;
+}
+
+.cards h2 {
+  color: #333;
+}
+
+.cards p {
+  color: #333;
+}
+
+с
+
+/*Меню*/
+.menu {
+  display: flex;
+ 
+  background-color: #000000;
+  padding: 10px;
+}
+
+.menu-btn {
+  font-size: 13px;
+  background-color: #fcfcfc;
+  color: rgb(195, 45, 0);
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-btn:hover {
+  background-color: #555;
+}
+
+.menu-btnn {
+  font-size: 13px;
+  background-color: #ff770f;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-btnn:hover {
+  background-color: #4460ff;
+}
+
+
+
+
+
+/*меню оранж*/
+.submenu{
+  width: 300px;
+}
+.fafa-angle-down{
+  
+  align-content: center;
+}
+.fafa-angle-downn{
+  align-content: center;
+}
+.reg{
+  padding-left:100px;
+}
+
+
+
+.h1{
+  color: #000;
+  margin-left:10px;
 }
